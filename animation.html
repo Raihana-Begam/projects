@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+
+div{
+  width: 50px;
+  height: 400px;
+  background-color: red;
+  position: relative;
+  animation: ani  5s linear 2s 4 reverse;
+
+}
+.ani1{
+animation name: ani1;
+ background-color: red;
+  position: relative;
+  width:600px;
+  height:60px;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: backwards;
+}
+@keyframes ani1{
+ 0%   {background-color:red; left:100px; top:0px;}
+  39%  {background-color:purple; left:400px; top:0px;}
+  50%  {background-color:blue; left:200px; top:300px;}
+  60%  {background-color:white; left:0px; top:400px;}
+  100% {background-color:orange; left:0px; top:0px;}
+}
+
+@keyframes ani  {
+  0%   {background-color:red; left:100px; top:0px; right:100px;}
+  25%  {background-color:yellow; left:400px; top:0px;}
+  50%  {background-color:blue; left:200px; top:300px;}
+  75%  {background-color:green; left:0px; top:400px;}
+  100% {background-color:red; left:0px; top:0px; right:100px;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<p>movements</p>
+
+<div class=" ani1"></div>
+<div></div>
+</body>
+</html>
+
+
